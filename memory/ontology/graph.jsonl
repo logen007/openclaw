@@ -1,0 +1,5 @@
+{"op": "create", "entity": {"id": "pers_ec500f2a", "type": "Person", "properties": {"name": "Anh D E C Y B E R", "email": "tranc333@gmail.com"}, "created": "2026-06-14T11:08:27.979081+00:00", "updated": "2026-06-14T11:08:27.979081+00:00"}, "timestamp": "2026-06-14T11:08:27.979081+00:00"}
+{"op": "create", "entity": {"id": "pers_1f9d6d61", "type": "Person", "properties": {"name": "Vy", "role": "main_agent"}, "created": "2026-06-14T11:08:28.062257+00:00", "updated": "2026-06-14T11:08:28.062257+00:00"}, "timestamp": "2026-06-14T11:08:28.062257+00:00"}
+{"op": "create", "entity": {"id": "proj_0e9ec0f4", "type": "Project", "properties": {"name": "OpenClaw System", "status": "active"}, "created": "2026-06-14T11:08:28.187143+00:00", "updated": "2026-06-14T11:08:28.187143+00:00"}, "timestamp": "2026-06-14T11:08:28.187143+00:00"}
+{"op": "relate", "from": "proj_0e9ec0f4", "rel": "has_owner", "to": "pers_ec500f2a", "properties": {}, "timestamp": "2026-06-14T11:08:31.703953+00:00"}
+{"op": "relate", "from": "proj_0e9ec0f4", "rel": "has_member", "to": "pers_1f9d6d61", "properties": {}, "timestamp": "2026-06-14T11:08:31.758900+00:00"}
