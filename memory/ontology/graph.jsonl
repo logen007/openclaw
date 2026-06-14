@@ -29,3 +29,8 @@
 {"op": "relate", "from": "agen_459ded0c", "rel": "uses_tool", "to": "scri_56e7092d", "properties": {}, "timestamp": "2026-06-14T11:10:28.390140+00:00"}
 {"op": "relate", "from": "cron_30716cd9", "rel": "runs_on", "to": "agen_07fd9db5", "properties": {}, "timestamp": "2026-06-14T11:10:28.442493+00:00"}
 {"op": "relate", "from": "cron_5afa60e2", "rel": "runs_on", "to": "agen_459ded0c", "properties": {}, "timestamp": "2026-06-14T11:10:28.505980+00:00"}
+{"op": "create", "entity": {"id": "agen_04a4f6b8", "type": "Agent", "properties": {"name": "Model-Usage", "role": "model_usage_tracker", "status": "active", "skillName": "model-usage"}, "created": "2026-06-14T11:11:34.721840+00:00", "updated": "2026-06-14T11:11:34.721840+00:00"}, "timestamp": "2026-06-14T11:11:34.721840+00:00"}
+{"op": "create", "entity": {"id": "agen_724bbf35", "type": "Agent", "properties": {"name": "Skill-Vetter", "role": "skill_security_reviewer", "status": "active", "skillName": "skill-vetter"}, "created": "2026-06-14T11:11:34.784580+00:00", "updated": "2026-06-14T11:11:34.784580+00:00"}, "timestamp": "2026-06-14T11:11:34.784580+00:00"}
+{"op": "relate", "from": "proj_907d2420", "rel": "has_member", "to": "agen_", "properties": {}, "timestamp": "2026-06-14T11:11:34.836941+00:00"}
+{"op": "relate", "from": "proj_907d2420", "rel": "has_member", "to": "agen_04a4f6b8", "properties": {}, "timestamp": "2026-06-14T11:11:38.754264+00:00"}
+{"op": "relate", "from": "proj_907d2420", "rel": "has_member", "to": "agen_724bbf35", "properties": {}, "timestamp": "2026-06-14T11:11:38.815123+00:00"}
