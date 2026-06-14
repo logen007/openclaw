@@ -1,0 +1,197 @@
+# Danh sách bài hát Karaoke 🎤
+
+- [Karaoke] Ánh Sao Và Bầu Trời - T.R.I x Cá
+- Karaoke có bè Nơi ta chờ em OST Em chưa 18 - Will
+- KARAOKE PHIÊU DU - 1NG (PROD. VRT)
+- KARAOKE BẢN CHUẨN DỄ HÁT | SAY SÓNG - TĂNG DUY TÂN | ALBUM KHU VƯỜN TÌNH
+- (BAE) TĂNG DUY TÂN - DẠ VŨ | KARAOKE
+- KARAOKE TONE CHUẨN DỄ HÁT | IKIGAI - TĂNG DUY TÂN ft BÍCH PHƯƠNG, 2PILLZ | ALBUM KHU VƯỜN TÌNH
+- TĂNG DUY TÂN - CẮT ĐÔI NỖI SẦU (ft DRUM7) | OFFICIAL KARAOKE BẢN CHUẨN (TONE NAM)
+- BẤT CHẤP - WHEE! (KARAOKE)
+- KARAOKE | CoolKid - Sau Cơn Mưa (ft. Rhyder) | BEAT Chuẩn
+- Cũng Đành Thôi - Đức Phúc「KARAOKE」
+- Người Và Ta ( Karaoke Beat Chuẩn )-Rhymastic ft Thanh Huyền (karaoke hay nhất)
+- ĐÈN TRỜI Karaoke - PHAN MẠNH QUỲNH (beat chuẩn tone nam)
+- [Karaoke] TÌNH ĐẦU - Tăng Duy Tân | Beat Gốc
+- [KARAOKE HẠ TONE] CẢM GIÁC LÚC ẤY SẼ RA SAO duycuongdz
+- Karaoke - bình yên / Vũ. (Live) - DECYBER
+- MÙA XUÂN ĐẦU TIÊN Karaoke - Mai Chí Công - decyber
+- SAU LỜI TỪ KHƯỚC [KARAOKE] - Phan Mạnh Quỳnh | Theme Song From "MAI", Đạo Diễn Trấn Thành
+- Karaoke Khi Người Mình Yêu Khóc LIVE - Phan Mạnh Quỳnh
+- Tình em là đại dương Karaoke Beat   Duy Mạnh
+- Karaoke Ngày Chưa Giông Bão (Live) - Phan Mạnh Quỳnh (Soul of The Forest)
+- ► [ Karaoke - Beat ] - Vẫn Nhớ - Soobin Hoàng Sơn
+- Yêu là tha thu | KARAOKE Hạ Tone
+- JustaTee - Đã Lỡ Yêu Em Nhiều (Official Karaoke)
+- [BEAT - KARAOKE] Nước Mắt Em Lau Bằng Tình Yêu Mới - Da LAB ft. Tóc Tiên (TONE NAM GỐC - G)
+- [KARAOKE] Đôi Giày Vải - Lam Trường (Beat gốc)
+- Ngày mai em đi - Lê Hiếu karaoke Beat
+- Kiếp Lữ Hành | GMC | Karaoke Tone Nam | Beat Xịn Huyền Thoại Ngày Xưa (Em)
+- KARAOKE Kiếp Lữ Hành Tone Nam | Nhan KTV
+- Kiếp Lữ Hành - Lam Trường - KARAOKE
+- vi em qua yeu anh - karaoke (full beat) my tam
+- KARAOKE ĐÊM LAO XAO   HÒA MINZY   XUÂN HẠ THU ĐÔNG RỒI LẠI XUÂN   ĐĨA THAN HỒNG
+- Karaoke Đêm Lao Xao Tone Nam | Nhan KTV
+- Vang Golden G - Em Là Hoàng Hôn (Karaoke)
+- [KARAOKE] CHỈ RIÊNG MÌNH TA - NGUYỄN HƯNG | Beat Gốc
+- Karaoke Tell Me Why   Mr A Full Beat
+- [ Karaoke ] EM NÊN DỪNG LẠI | KHANG VIỆT - Beat Gốc Độc Quyền
+- Karaoke Beat Gốc | Hoang Mang - Hồ Quỳnh Hương | Tone Nam Hạ Tone (C#m)
+- DÁNG EM KARAOKE - Dương Edward | Khúc Hoạ Tình 2021 (Tone gốc)
+- karaoke nobita thầm yêu xuka | NL KARA
+- Ta và Nàng karaoke
+- KARAOKE CHỜ EM - JIMMY NGUYỄN | BEAT CHUẨN
+- Chẳng thể tìm được em - Karaoke - Hạ 1 tone so với beat gốc
+- [KARAOKE] LẠC - Rhymastic | TIKTOK KARA
+- KHÁC BIỆT TO LỚN (OFFICIAL KARAOKE) | TRỊNH THĂNG BÌNH - LIZ KIM CƯƠNG |
+- Karaoke Anh Tin Mình Đã Cho Nhau Một Kỉ Niệm
+- KARAOKE-CHÂN TÌNH-HẠ TONE NAM Gm-DỄ HÁT
+- Karaoke Lâu Đài Tình Ái Song Ca | Nhạc Sống Nguyễn Linh
+- Karaoke HD -  Bông hồng thủy tinh - TÙNG HÁT - Bức Tường
+- KARAOKE | KHÓC HUYNH ĐỆ (BEAT GỐC TỪ ATO) | OST Bi Long Đại Ca
+- Không Phải Em (Karaoke) - Đàm Vĩnh Hưng.
+- NGÀY ĐẦU TIÊN - ĐỨC PHÚC | BEAT HẠ TONE - CÓ BÈ | KARAOKE CHUẨN | SBF_entertainment
+- Với anh em vẫn là cô bé Beat xịn hát Karaoke
+- Karaoke Với Anh Em Vẫn Là Cô Bé Beat Chuẩn Tone Nam
+- Và Thế Là Hết (Lalala Version 2) - Soobin Hoàng Sơn「KARAOKE」
+- Dilemma - Nelly & Kelly Rowland | Karaoke Version | KaraFun
+- Gác lại âu lo - Da LAB ft. Miu Lê (Official Karaoke Video)
+- Đốt - Ngọt Karaoke Beat gốc
+- Nelly ft. Kelly Rowland - Dilemma (Karaoke Version)
+- Karaoke Tiểu thuyết tình yêu - Lee7
+- Anh Không Muốn Ra Đi [Karaoke] - Nguyễn Phi Hùng
+- HƠN CẢ YÊU - ĐỨC PHÚC | OFFICIAL KARAOKE | INSTRUMENTAL
+- KARAOKE 1 PHÚT |  ANDIEZ
+- Em kể anh nghe | Karaoke_Em | Tone nam | Linh Phi
+- Dẫu có lỗi lầm - karaok - tone nam
+- Karaoke - Tia x Lê Thiện Hiếu - Ai Đưa Em Về / Take Me Back Home #ADEV
+- Tình yêu màu nắng KARAOKE
+- [♪] Một Nhà (Karaoke) - DaLAB [♫]
+- 「KARAOKE/BEAT」HÔM NAY TÔI BUỒN - PHÙNG KHÁNH LINH | TONE NAM
+- 「BEAT TONE NAM」KHI CÔ ĐƠN EM NHỚ AI (LOFI MUSIC) - VICKY NHUNG x LONG REX | BEAT KARAOKE CHUẨN
+- Santa Claus Is Comin' to Town - Frank Sinatra | Karaoke Version | KaraFun
+- THỨC GIẤC - Da Lab (Karaoke Beat Tone Nam)
+- Nàng Thơ - Karaoke Hạ 2 Tone - Tone Nam Trầm - Beat Chất lượng cao
+- NƠI MÌNH DỪNG CHÂN Karaoke Tone Nam
+- MÌNH LẠC NHAU MUÔN ĐỜI - PHẠM SẮC LỆNH (KARAOKE TONE GỐC NAM)
+- [KARAOKE] Rồi Người Thương Cũng Hoá Người Dưng - Hiền Hồ ( Beat Chuẩn)
+- Xem Như Tôi Từng Cưới Được Cô Ấy【KARAOKE】当我娶过她 [Pinyin Lyrics] - Mạc Khiếu Tỷ Tỷ | 莫叫姐姐 | S. Kara ♪
+- Karaoke Thay Tôi Yêu Cô Ấy - Hạ Tone dễ hát
+- Freaky Squad  Binz Beat
+- [Karaoke FullBeat] Sét - 8x Band ✔
+- Dáng Em (Karaoke) - Nguyễn Phi Hùng | Official Music Video
+- KARAOKE - VÌ TIỀN BỎ BẠN | NHẠC ĐỜI | NHẠC CHẾ VỀ ĐỜI
+- KARAOKE CAFE KHÔNG ĐƯỜNG || JOMBIE x TKAN & BEAN || OFFICIAL MUSIC VIDEO
+- Bỏ Em Vào Balo - Tân Trần - KARAOKE BEAT CHUẨN // Hát Cùng Orinn
+- Simple Love KARAOKE:// Beat chuẩn, nguyên bản....
+- Thịnh Suy - CHUYỆN RẰNG | KARAOKE (BEAT CHUẨN)
+- Tháng Năm - SOOBIN | Karaoke - Beat Chuẩn
+- Tháng năm - SOOBIN × SLIMV |Chợt nhận ra anh đã đánh mất...
+- [KARAOKE] Ba Kể Con Nghe (Acoustic Cover) - Bập Bênh Team
+- H Tube | Yêu Từ Đâu Mà Ra | Lil Zpoet | Karaoke Beat
+- Karaoke | Nhớ Về Em  - Jimmii Nguyễn
+- Lần Cuối - Ngọt | Beat Acoustic Karaoke
+- KARAOKE LA ISLA BONITA Madonna
+- Karaoke Suy Nghĩ Trong Anh  - Duy Khoa  full Beat
+- Mai Mai Karaoke lam truong
+- [KARAOKE] Khói Thuốc Đợi Chờ - Jimmi Nguyễn
+- KARAOKE VÔ TÌNH   張學友 回頭太難   JIMMY NGUYỄN   YouTube
+- [BEAT NAM] Thay Tôi Yêu Cô Ấy - Thanh Hưng | Beat Gốc Chuẩn (Karaoke Có Bè)
+- HẾT THƯƠNG CẠN NHỚ - ĐỨC PHÚC | KARAOKE BEAT CHUẨN
+- Karaoke Mascara|Chillies [Beat phối]
+- [ Karaoke] Sai Lầm Của Anh - Đình Dũng | Tone Nam Beat Chuẩn
+- Buồn Thì Cứ Khóc Đi - Lynk Lee | Karaoke Tone Nam
+- Karaoke Beat Thằng Điên Của JUSTATEE x PHƯƠNG LY Beat chuẩn
+- hongkong 1 karaoke
+- Con đường tình yêu   Lam Trường Beat YouTube
+- Rhymastic - Treasure Beat Lyric 2017
+- Yêu 5 - Rhymastic「KARAOKE」
+- Karaoke Liều Thuốc Cho Trái Tim Tone Nam | Beat Mới | 84
+- HÃY VỀ ĐÂY BÊN ANH [KARAOKE TONE NAM] - TUẤN HƯNG || Người yêu ơi có biết anh nhớ em nhiều lắm...
+- KARAOKE HOA BẰNG LĂNG - JIMMY NGUYỄN | BEAT CHUẨN
+- KARAOKE TÚP LỀU LÝ TƯỞNG (BẢO ANH) - TONE NAM (LIVEBAND)
+- [Karaoke] Anh ghét làm bạn em - Phan Mạnh Quỳnh
+- Enrique Inglesias - Hero (Karaoke Version)
+- Yêu Lại Từ Đầu - Khắc Việt | Karaoke Beat Chuẩn Mới Nhất
+- LẠC TRÔI KARAOKE |Beat Chuẩn Có Bè Hỗ Trợ|
+- Sao cũng được karaoke——binz——đừng report nha a
+- Lâu Đài Tình Ái - KARAOKE | Mai Chí Công | Nhạc Hot Tiktok2021
+- [KARAOKE] Đen - hai triệu năm ft. Biên (Live at Show của Đen)
+- Tôi biết em không biết kara
+- Lạc trôi beat! Hạ tone!
+- QNT - EM KHÔNG ĐI ĐÂU ft GIANG l KARAOKE
+- [Vietsub + Kara] [携手游人间 - Nắm Tay Nhau Du Ngoạn Nhân Gian - Trương Chấn
+- Karaoke | Hãy Trao Cho Anh (Beat Cực Chuẩn) - Sơn Tùng M-TP Ft. Snoop Dogg ✔
+- TÌNH ĐẦU - Tăng Duy Tân (Karaoke)
+- KHÔNG CẦN PHẢI HỨA ĐÂU EM - KHẢI ĐĂNG - KARAOKE - ĐĂNG'S LAB
+- [KARAOKE] Có Chàng Trai Viết Lên Cây (Beat phối chuẩn 1tỷ%) / Phan Mạnh Quỳnh - OST Mắt Biếc
+- [KARAOKE] Nơi Này Có Anh - Beat gốc hạ tông dễ hát - Sơn Tùng - MTP Full HD
+- NGÀY MAI NGƯỜI TA LẤY CHỒNG - THÀNH ĐẠT | KARAOKE TONE NAM ( BEAT CHUẨN )
+- Tháng Tư Là Lời Nói Dối Của Em | Karaoke Beat Gốc | Hà Anh Tuấn.
+- KARAOKE BEAT NGÀY MAI EM ĐI 2017   LÊ HIẾU ft SOOBIN HOÀNG SƠN
+- Soledad - Westlife Karaoke Version
+- Tình đơn phương Karaoke Acoustic   Dương Edward ft Tùng Acoustic
+- LOU HOÀNG - BẮT CÓC CON TIM (Official MV) ft. OnlyC Pro.
+- Liều Thuốc Cho Trái Tim Karaoke Tone Nam | Nguyên Khang - Quốc Khanh - Đoàn Phi
+- KARAOKE CHỈ CẦN EM HẠNH PHÚC (BEAT LIVEBAND) - LÂN NHÃ
+- Karaoke HD Liều Thuốc Cho Trái Tim Lý Hải
+- [Karaoke] Dành cho em - Hoàng Tôn Full Beat
+- [ KARAOKE ] MỘT ĐÊM SAY - Thịnh Suy || Tone Nam
+- VCT - NGƯỜI BÌNH THƯỜNG | OFFICIAL
+- TĂNG DUY TÂN & HÒA MINZY - BẬT TÌNH YÊU LÊN - KARAOKE  | BEAT CHUẨN CÓ GIỌNG NỮ | icT Sound
+- Tăng Duy Tân - BÊN TRÊN TẦNG LẦU | KARAOKE
+- KARAOKE GIÁ NHƯ - TÙNG DƯƠNG & SOOBIN HOÀNG SƠN (BEAT LIVE CHUẨN)
+- [Karaoke] Thanh Xuân - Da LAB (Beat Chuẩn)
+- Tái Sinh - Tăng Duy Tân Version -  Lyrics Video
+- KARAOKE Dù có cách xa - Đinh Mạnh Ninh
+- Một Bài Hát Không Vui Mấy Karaoke (Beat Gốc Chuẩn) | T.R.I x ‪Dangrangto‬ x DONAL
+- ANH CHẲNG THỂ - PHẠM KỲ -karaoke (beat chuẩn )
+- Sau Tất Cả - Erik St-319 Karaoke Beat tone thấp
+- KHOÁ LY BIỆT | KARAOKE BEAT GỐC | VOI BẢN ĐÔN
+- KARAOKE KHÓA LY BIỆT - HẠ TONE
+- KARAOKE  (Beat chuẩn) - NHỮNG LỜI HỨA BỎ QUÊN / VŨ. x DEAR JANE
+- Đừng Làm Trái Tim Anh Đau Karaoke - DECYBER
+- Khuôn mặt đáng thương Karaoke - DECYBER
+- Túy Âm - Karaoke Tone Nam
+- [Karaoke] Sẽ quên em nhanh thôi (Live concert) | Soobin Hoàng Sơn ft Rhymastic
+- TRI KỶ (LIVE) - PHAN MẠNH QUỲNH | KARAOKE NHẠC TRẺ | BEAT TONE NAM COVER
+- KARAOKE - DÀNH CHO EM - HOÀNG DŨNG x ORANGE - BEAT CHUẨN - SONG CA - LIVE BAND YÊN CONCERT
+- NHẠT (KARAOKE BẢN PHỐI MỚI) - PHAN MẠNH QUỲNH  || Vì một khi đã ngưng cố gắng làm người kia vui
+- Nơi Ta Chờ Em - Will | Karaoke - Beat Chuẩn
+- Karaoke Từng Ngày Yêu Em (Version Hành trình thanh âm ZLAB) / buitruonglinh (Prod. Đậu Tấn Đạt)
+- Từng Ngày Yêu Em (Acoustic) (Instrumental) / buitruonglinh (prod. Đậu Tất Đạt)
+- OFFICIAL KARAOKE | NGÀN NĂM ÁNH SÁNG - ĐẶNG VĨNH THỊNH | TÌNH ANH DỐC HẾT...
+- Beat Chuẩn - BẠN ĐỜI - KARIK - (FT. GDUCKY) - KARAOKE CHUẨN DỄ HÁT
+- [Karaoke] Phiêu Du (Demo Version) - 1nG (Prod. VRT)
+- Karaoke Tóc như tuyết - Châu Kiệt Luân | 发如雪 - 周杰伦 (Jay Chou) - DECYBER
+- The Beatles - Yesterday (Karaoke Version)
+- Bản Tình Ca Mùa Đông | Karaoke Remix | Beat Chuẩn | Tone Nam | Bình Nguyên Media
+- Bản Tình Ca Mùa Đông (REMIX) - Dương Edward x Haozi
+- Karaoke   Yêu 5   Rhymatic's Remix   YouTube
+- Hãy Về Đây Bên Anh Karaoke Tone Nam | Karaoke Hiền Phương
+- Kho Báu  karaoke
+- KARAOKE KHI NGƯỜI MÌNH YÊU KHÓC REMIX - HND76 BEAT HOT TIKTOK 2025
+- [Karaoke beat] - Em Của Ngày Hôm Qua  -  Sơn Tùng M-TP
+- CÓ EM ĐỜI VUI NHƯ TẾT karaoke | Em ngọc ngà đài trang như tiên giáng trần karaoke
+- Karaoke Đồng thoại 童话   光良 Pinyin
+- Lặng Thầm Karaoke (Tone Nam Chuẩn) -  Thầy Chín Sáu | Hạ Tone
+- KARAOKE Ngày Em Đến - CHERRI CHERRI LADY ( Việt Hóa )
+- Karaoke | Tình Thôi Xót Xa || Lam Trường || Beat Chuẩn
+- Karaoke: Katy, Katy (Kathy, Kathy) | Đức Trí | Lam Trường
+- Ánh Nắng Của Anh - Karaoke FHD || Beat Chuẩn
+- TRẠNG THÁI MỘNG MƠ - ĐỖ HOÀNG LONG | KARAOKE TONE NAM | BEAT Chuẩn by ĐỖ HOÀNG LONG
+- Karaoke Mình là gì của nhau   Lou Hoàng Beat
+- KARAOKE | KHO BÁU - STRONG TRỌNG HIẾU FT.  RHYMASTIC
+- VỠ TAN (LIVE) - HIỀN HỒ x TRỊNH THĂNG BÌNH | KARAOKE NHẠC TRẺ | BEAT SONG CA COVER
+- AMEE x B RAY - Anh Nhà Ở Đâu Thế  Karaoke [Beat Chuẩn]
+- Binh Yen - Vu. (Live)
+- Cho Toi Di Theo Voi
+- Con Duong Mau Xanh - Le Quyen ft. Le Hieu
+- Di Vang Nhat Nhoa - Lan Nha
+- Mascara - Chillies
+- Mua Xuan Dau Tien - Mai Chi Cong
+- Otherside - Red Hot Chili Peppers
+- Simple Love - Obito
+- Sai Gon Dau Long Qua - Hua Kim Tuyen x Hoang Duyen
+- Tóc như tuyết - Châu Kiệt Luân
+- Duong Mot Chieu
