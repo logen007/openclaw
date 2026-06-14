@@ -34,3 +34,6 @@
 {"op": "relate", "from": "proj_907d2420", "rel": "has_member", "to": "agen_", "properties": {}, "timestamp": "2026-06-14T11:11:34.836941+00:00"}
 {"op": "relate", "from": "proj_907d2420", "rel": "has_member", "to": "agen_04a4f6b8", "properties": {}, "timestamp": "2026-06-14T11:11:38.754264+00:00"}
 {"op": "relate", "from": "proj_907d2420", "rel": "has_member", "to": "agen_724bbf35", "properties": {}, "timestamp": "2026-06-14T11:11:38.815123+00:00"}
+{"op": "create", "entity": {"id": "scri_ec8f0a59", "type": "Script", "properties": {"name": "model-usage", "path": "scripts/model-usage.mjs", "purpose": "Track model usage and costs"}, "created": "2026-06-14T11:14:22.663360+00:00", "updated": "2026-06-14T11:14:22.663360+00:00"}, "timestamp": "2026-06-14T11:14:22.663360+00:00"}
+{"op": "relate", "from": "agen_04a4f6b8", "rel": "uses_tool", "to": "scri_", "properties": {}, "timestamp": "2026-06-14T11:14:22.722452+00:00"}
+{"op": "relate", "from": "agen_04a4f6b8", "rel": "uses_tool", "to": "scri_ec8f0a59", "properties": {}, "timestamp": "2026-06-14T11:14:26.335323+00:00"}
