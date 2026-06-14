@@ -1,0 +1,43 @@
+types:
+  Agent:
+    required:
+    - name
+    - role
+    status_enum:
+    - active
+    - inactive
+    - pending
+  Script:
+    required:
+    - name
+    - path
+  CronJob:
+    required:
+    - name
+    - schedule
+relations:
+  has_member:
+    from_types:
+    - Project
+    to_types:
+    - Agent
+    - Person
+    cardinality: many
+  uses_tool:
+    from_types:
+    - Agent
+    to_types:
+    - Script
+    cardinality: many
+  runs_on:
+    from_types:
+    - CronJob
+    to_types:
+    - Agent
+    cardinality: one_to_one
+  has_owner:
+    from_types:
+    - Project
+    to_types:
+    - Person
+    cardinality: one_to_one
