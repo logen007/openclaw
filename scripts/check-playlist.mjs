@@ -139,28 +139,49 @@ for (const s of songs) {
 if (DO_UPDATE) {
   if (!IS_JSON) console.log('📝 Đang cập nhật sheet...');
   const token = await getToken(true);
+
+  // Preserve existing data, rebuild from original sheet rows
+  // Only touch B (Available) and C (Note); keep A (Song) and D (Video ID) as-is
+  const updatedRows = [];
   
-  // Build new rows: header + existing (updated) + new songs
-  const header = ['Song', 'Available', 'Note', 'Video ID'];
-  const updatedRows = [header];
-  
-  // Process EXISTING sheet rows
-  for (const s of songs) {
-    if (!s.name) continue;
-    const isMissing = missingRows.some(m => m.idx === s.idx);
-    if (isMissing) {
-      updatedRows.push([s.name, 'NO', 'Video no longer in playlist', s.videoId]);
-    } else {
-      updatedRows.push([s.name, 'YES', s.note || '', s.videoId]);
-    }
+  // Header: keep original A:D header if exists, else create
+  if (sheetRows.length > 0 && sheetRows[0][0]) {
+    // Keep original header, fill missing cols
+    const h = [...sheetRows[0]];
+    while (h.length < 4) h.push('');
+    updatedRows.push(h);
+  } else {
+    updatedRows.push(['Song', 'Available', 'Note', 'Video ID']);
   }
   
-  // Append NEW songs
+  // Process EXISTING sheet rows (index 1 onwards = actual songs)
+  const missingIdx = new Set(missingRows.map(m => m.idx - 1)); // 0-based index
+  
+  for (let i = 1; i < sheetRows.length; i++) {
+    const raw = sheetRows[i];
+    // Preserve ALL original columns verbatim
+    const row = [...raw];
+    while (row.length < 4) row.push('');
+    
+    if (missingIdx.has(i)) {
+      row[1] = 'NO';
+      row[2] = 'Video no longer in playlist';
+    } else if (raw[0] && raw[0].trim()) {
+      // Only update B if empty or was YES before
+      if (!row[1] || row[1].trim().toUpperCase() !== 'NO') {
+        row[1] = 'YES';
+      }
+      // Keep original note, don't overwrite
+    }
+    updatedRows.push(row);
+  }
+  
+  // Append NEW songs (not in original sheet at all)
   for (const ns of newSongs) {
     updatedRows.push([ns.title, 'YES', 'New - auto added by KA', ns.id]);
   }
   
-  // PUT to sheet
+  // PUT to sheet — write entire A:D range
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${TAB}!A:D?valueInputOption=USER_ENTERED`;
   const resp = await fetch(url, {
     method: 'PUT',
