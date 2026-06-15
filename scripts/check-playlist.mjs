@@ -1,97 +1,133 @@
 #!/usr/bin/env node
-// Check YouTube playlist against saved song list
+// Check YouTube playlist against Google Sheet database
 import { execSync } from 'child_process';
-import { readFileSync, writeFileSync } from 'fs';
+import { readSheet } from './sheets-jwt.mjs';
 
 const PLAYLIST = 'https://www.youtube.com/playlist?list=PLV4DMTjPQbc3bUMh0hel3zqogU9Vb-Kt7';
-const SONGS_FILE = '/home/openclaw/.openclaw/workspace/karaoke/SONGS.md';
+const SHEET_ID = '1QSJHCx1MLOBIjHDhCqeIukYmj5AtDGOvaizrnKLCtog';
+const TAB = 'PlayList';
 
-// Fetch playlist titles
-console.log('📥 Fetching playlist...');
-const raw = execSync(`yt-dlp --flat-playlist --print "%(title)s|%(id)s" "${PLAYLIST}" 2>/dev/null`, { timeout: 30000 });
+const IS_JSON = process.argv.includes('--json');
+
+// ── 1. Fetch YouTube playlist ──────────────────────────────────
+if (!IS_JSON) console.log('📥 Fetching YouTube playlist...');
+const raw = execSync(
+  `yt-dlp --flat-playlist --dump-json "${PLAYLIST}" 2>/dev/null`,
+  { timeout: 30000 }
+);
 const playlistEntries = raw.toString().trim().split('\n').filter(Boolean).map(line => {
-  const [title, id] = line.split('|');
-  return { title: title ? title.trim() : '', id: id ? id.trim() : '' };
-});
+  try {
+    const d = JSON.parse(line);
+    return { title: (d.title || '').trim(), id: (d.id || '').trim() };
+  } catch { return { title: '', id: '' }; }
+}).filter(e => e.title); // only non-empty titles
 
-console.log(`📋 Playlist: ${playlistEntries.length} videos`);
+if (!IS_JSON) console.log(`  → ${playlistEntries.length} bài khả dụng (trên tổng ~231)`);
 
-// Read current songs
-const songsContent = readFileSync(SONGS_FILE, 'utf8');
-const songsLines = songsContent.split('\n');
+// ── 2. Read songs from Google Sheet ────────────────────────────
+if (!IS_JSON) console.log('📄 Đọc Google Sheet...');
+let sheetSongs;
+try {
+  const data = await readSheet(SHEET_ID, `${TAB}!A2:A`, false);
+  sheetSongs = data.values
+    ? data.values.map(row => (row[0] || '').trim()).filter(Boolean)
+    : [];
+} catch (e) {
+  console.error('❌ Lỗi đọc sheet:', e.message);
+  process.exit(1);
+}
+if (!IS_JSON) console.log(`  → ${sheetSongs.length} bài trong sheet`);
 
-// Extract song names from SONGS.md (lines starting with - )
-const savedSongs = songsLines
-  .filter(l => l.trim().startsWith('- '))
-  .map(l => l.replace(/^-\s*/, '').trim().toLowerCase());
-
-// Extract just the song name part (before the dash or pipe)
-function normalizeSongTitle(rawTitle) {
-  let t = rawTitle
-    .replace(/^\[.*?\]\s*/, '')         // [KARAOKE], [BEAT], etc
-    .replace(/[-–]\s*(KARAOKE|Beat|Official|Karaoke|Lyrics|Instrumental).*/i, '')
-    .replace(/\(.*?\)/g, '')
-    .replace(/[|♪♬♩🎤►「」【】《》]/g, ' ')
+// ── 3. Normalize function ──────────────────────────────────────
+function normalize(raw) {
+  let t = raw
+    .replace(/\[.*?\]/g, ' ')
+    .replace(/\(.*?\)/g, ' ')
+    .replace(/[|♪♬♩🎤►「」【】《》▶▶]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
     .toLowerCase();
-  // Take first meaningful part
+  // Take first meaningful part (before - or –)
   const parts = t.split(/[-–]/);
-  return (parts[0] || t).trim().replace(/karoake|karaoke|beat|tone nam|hạ tone/gi, '').trim();
+  let result = (parts[0] || t).trim()
+    .replace(/\[\s*\]/g, '')
+    .replace(/\s+(karaoke|karoake|beat|tone nam|hạ tone|official|lyrics|instrumental|full)\s*/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\s*vietnamese\s*/i, '')
+    .replace(/\s*subtitle\s*/i, '')
+    .trim();
+  // If first part is empty after cleanup, try the second part
+  if (!result && parts.length > 1) {
+    result = parts.slice(1).join(' ').trim()
+      .replace(/\[\s*\]/g, '')
+      .replace(/\s+(karaoke|karoake|beat|tone nam|hạ tone|official|lyrics|instrumental|full)\s*/gi, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .replace(/hạ tone|tone nam|tone|beat|karaoke|karoake/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+  return result;
 }
 
-// Check for new videos not in saved songs
-const missingFromList = [];
-const foundInList = [];
+// ── 4. Match playlist entries vs sheet songs ───────────────────
+const missingFromList = [];   // in playlist, NOT in sheet
+const foundInList = [];       // in playlist AND in sheet
 
 for (const entry of playlistEntries) {
-  const normalized = normalizeSongTitle(entry.title);
-  const matched = savedSongs.some(s => {
-    // Check if any significant part of the song title matches
-    const songParts = s.split(/[-–|]/).map(p => p.trim().toLowerCase());
-    return songParts.some(part => {
-      if (part.length < 5) return false;
-      return normalized.includes(part) || part.includes(normalized);
-    });
+  const norm = normalize(entry.title);
+  if (!norm) { foundInList.push(entry); continue; }
+  const matched = sheetSongs.some(s => {
+    const sNorm = normalize(s);
+    if (!sNorm) return false;
+    // Exact match │ one contains the other (meaningful length)
+    if (sNorm === norm) return true;
+    if (sNorm.length >= 5 && norm.length >= 5) {
+      if (sNorm.includes(norm) || norm.includes(sNorm)) return true;
+      // Core first-10-char match
+      const core = norm.slice(0, 10);
+      if (core.length >= 5 && sNorm.includes(core)) return true;
+    }
+    return false;
   });
-  
-  if (!matched) {
-    missingFromList.push(entry);
-  } else {
-    foundInList.push(entry);
-  }
+  if (matched) foundInList.push(entry);
+  else missingFromList.push(entry);
 }
 
-// Check for saved songs missing from playlist (may be copyright takedowns)
+// ── 5. Check sheet songs missing from playlist ─────────────────
 const missingFromPlaylist = [];
-for (const song of savedSongs) {
-  const normalized = normalizeSongTitle(song);
+for (const song of sheetSongs) {
+  const norm = normalize(song);
+  if (!norm) continue;
   const matched = playlistEntries.some(e => {
-    const eNorm = normalizeSongTitle(e.title);
-    return eNorm.includes(normalized) || normalized.includes(eNorm);
+    const eNorm = normalize(e.title);
+    if (!eNorm) return false;
+    return eNorm.includes(norm) || norm.includes(eNorm);
   });
-  if (!matched) {
-    missingFromPlaylist.push(song);
-  }
+  if (!matched) missingFromPlaylist.push(song);
 }
 
-console.log(`\n✅ Đã match: ${foundInList.length}/${playlistEntries.length}`);
-console.log(`🆕 Có thể là bài mới: ${missingFromList.length}`);
-console.log(`❌ Có thể bị mất: ${missingFromPlaylist.length}`);
-
-if (missingFromList.length > 0) {
-  console.log('\n🆕 BÀI MỚI (có thể thêm vào):');
-  for (const e of missingFromList) {
-    console.log(`  • ${e.title}`);
+// ── 6. Output ──────────────────────────────────────────────────
+if (IS_JSON) {
+  console.log(JSON.stringify({
+    total: playlistEntries.length,
+    matched: foundInList.length,
+    new_count: missingFromList.length,
+    missing_count: missingFromPlaylist.length,
+    new_songs: missingFromList.map(e => ({ title: e.title, id: e.id })),
+    missing_songs: missingFromPlaylist.map(name => ({ name })),
+  }));
+} else {
+  console.log(`\n✅ Đã match: ${foundInList.length}/${playlistEntries.length}`);
+  console.log(`🆕 Chưa có trong Google Sheet: ${missingFromList.length}`);
+  console.log(`❌ Mất trên playlist: ${missingFromPlaylist.length}`);
+  if (missingFromList.length) {
+    console.log('\n📦 Bài mới (chưa có trong sheet):');
+    missingFromList.forEach(e => console.log(`  • ${e.title}`));
   }
-}
-
-if (missingFromPlaylist.length > 0) {
-  console.log('\n⚠️ BÀI CÓ THỂ BỊ MẤT TRÊN PLAYLIST:');
-  for (const s of missingFromPlaylist) {
-    // Find it in saved songs
-    const origLine = songsLines.find(l => l.trim().startsWith('- ') && l.toLowerCase().includes(s.substring(0, 10)));
-    console.log(`  • ${origLine ? origLine.replace(/^-\s*/, '') : s}`);
+  if (missingFromPlaylist.length) {
+    console.log('\n⚠️ Bài có trong sheet nhưng mất trên playlist:');
+    missingFromPlaylist.forEach(s => console.log(`  • ${s}`));
   }
-  console.log('\n📢 Hãy báo anh để thêm lại!');
 }

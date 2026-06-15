@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "skills": {
+    "ontology": {
+      "version": "1.0.4",
+      "installedAt": 1781435298484
+    },
+    "model-usage": {
+      "version": "1.0.0",
+      "installedAt": 1781435483530
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1781435486859
+    },
+    "n8n": {
+      "version": "2.0.0",
+      "installedAt": 1781435867720
+    }
+  }
+}

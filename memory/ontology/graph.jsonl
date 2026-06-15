@@ -40,3 +40,4 @@
 {"op": "create", "entity": {"id": "agen_e446db6e", "type": "Agent", "properties": {"name": "n8n", "role": "workflow_automation", "status": "active", "skillName": "n8n"}, "created": "2026-06-14T11:33:57.087138+00:00", "updated": "2026-06-14T11:33:57.087138+00:00"}, "timestamp": "2026-06-14T11:33:57.087138+00:00"}
 {"op": "relate", "from": "proj_907d2420", "rel": "has_member", "to": "agen_", "properties": {}, "timestamp": "2026-06-14T11:33:57.148869+00:00"}
 {"op": "relate", "from": "proj_907d2420", "rel": "has_member", "to": "agen_e446db6e", "properties": {}, "timestamp": "2026-06-14T11:33:57.258257+00:00"}
+{"op": "relate", "from": "agen_e446db6e", "rel": "uses_tool", "to": "scri_", "properties": {}, "timestamp": "2026-06-14T11:38:52.090595+00:00"}

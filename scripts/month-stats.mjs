@@ -1,15 +1,13 @@
 import { readSheet } from './sheets-jwt.mjs';
 
 const SPREADSHEET_ID = '1b41Q0HDaLwwBtBXXR38RVJh_eLigrXN6PYcteIYHhBM';
-const IS_JSON = process.argv.includes('--json');
 
 async function main() {
   const data = await readSheet(SPREADSHEET_ID, 'Jun 2026!A:O');
   
   const rows = data.values || [];
   const today = new Date();
-  const args = process.argv.slice(2);
-  const DAY = parseInt(args.find(a => !a.startsWith('--'))) || 12;
+  const DAY = parseInt(process.argv[2]) || 12;
 
   let todayOrders = [];
   let totalRevenue = 0;
@@ -83,12 +81,6 @@ async function main() {
     bySource[s].revenue += o.total;
     if (o.hasCost) bySource[s].profit += o.profit;
     else bySource[s].profit += o.payout * 0.55;
-  if (IS_JSON) {
-    const out = { day: DAY, orders_count: todayOrders.length, revenue: Math.round(totalRevenue*100)/100, payout: Math.round(totalPayout*100)/100, cost: Math.round(totalCost*100)/100, profit_known: Math.round(totalProfitKnown*100)/100, profit_estimated: Math.round(totalProfitEstimated*100)/100, profit_total: Math.round((totalProfitKnown+totalProfitEstimated)*100)/100, estimated_count: estimatedCount, sources: {}, orders: todayOrders.map(o=>({time:o.time,name:o.name,country:o.country,total:o.total,profit:o.hasCost?o.profit:null,source:o.source})) };
-    for (const [src, info] of Object.entries(bySource)) { out.sources[src] = { count: info.count, revenue: Math.round(info.revenue*100)/100 }; }
-    console.log(JSON.stringify(out));
-    process.exit(0);
-  }
   }
 
   console.log(`📊 HÔM NAY — ${DAY}/6`);

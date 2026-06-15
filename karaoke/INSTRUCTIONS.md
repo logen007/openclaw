@@ -45,11 +45,9 @@
 
 ## 🛠 Script có sẵn
 
-- `scripts/check-playlist.mjs` — fetch playlist với yt-dlp
-- `scripts/find-new.mjs` — lọc bài mới
-- OAuth token: `~/.openclaw/credentials/youtube-oauth-token.json`
-- API key: `~/.openclaw/credentials/youtube-api-key.txt`
-- YouTube Client ID: `~/.openclaw/credentials/youtube-oauth-client.json`
+- `scripts/check-playlist.mjs` — fetch playlist + so sánh với Google Sheet (dùng JWT auth)
+- Chạy: `node scripts/check-playlist.mjs` hoặc `node scripts/check-playlist.mjs --json`
+- **Database:** Google Sheet `PlayList` tab — là source of truth duy nhất`
 
 ---
 

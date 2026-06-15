@@ -10,6 +10,11 @@ Không approve riêng lẻ từng cái.
 ⚠️ **Nguyên tắc:** Luôn phải bao gồm TẤT CẢ quyền đã được approve trước đó.
 Nếu sau này thêm quyền mới (>3), lần OAuth tiếp theo cũng phải gộp chung cả quyền cũ + quyền mới.
 
+## Model Usage Report
+- Cron: chạy 09:00 ICT mỗi ngày
+- Script: `scripts/model-usage.mjs`
+- Báo cáo token, model, cost qua Telegram
+
 ## Self-Improving Agent
 - Sub-agent chuyên audit, review và cải tiến hệ thống agents
 - Review: MEMORY.md, AGENTS.md, SOUL.md, skills, scripts
