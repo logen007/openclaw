@@ -136,6 +136,7 @@ for (const s of songs) {
 }
 
 // ─────────── 6. UPDATE sheet ───────────
+let skipped = 0;
 if (DO_UPDATE) {
   if (!IS_JSON) console.log('📝 Đang cập nhật sheet...');
   const token = await getToken(true);
@@ -176,8 +177,10 @@ if (DO_UPDATE) {
     updatedRows.push(row);
   }
   
-  // Append NEW songs (not in original sheet at all)
-  for (const ns of newSongs) {
+  // Append NEW songs — only if they have a valid YouTube ID
+  const validNewSongs = newSongs.filter(ns => ns.id && ns.id.length >= 8 && ns.title);
+  skipped = newSongs.length - validNewSongs.length;
+  for (const ns of validNewSongs) {
     updatedRows.push([ns.title, 'YES', 'New - auto added by KA', ns.id]);
   }
   
@@ -197,7 +200,7 @@ if (DO_UPDATE) {
   }
   const added = newSongs.length;
   const marked = missingRows.length;
-  if (!IS_JSON) console.log(`✅ Sheet updated: +${added} mới, ${marked} đánh dấu NO`);
+  if (!IS_JSON) console.log(`✅ Sheet updated: +${added} mới, ${marked} NO, ${skipped} skip (no ID)`);
 }
 
 // ─────────── 7. Output ───────────
@@ -210,7 +213,7 @@ const output = {
   missing_count: missingRows.length,
   new_songs: newSongs.map(e => ({ title: e.title, id: e.id, position: e.position })),
   missing_songs: missingRows.map(s => ({ name: s.name })),
-  ...(DO_UPDATE ? { updated: true } : {}),
+  ...(DO_UPDATE ? { updated: true, skipped_no_id: skipped } : {}),
 };
 
 if (IS_JSON) {
